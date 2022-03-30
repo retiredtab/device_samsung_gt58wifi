@@ -60,6 +60,12 @@ PRODUCT_COPY_FILES += \
        vendor/samsung/gt58wifi/proprietary/etc/Tfa9895.cnt:$(TARGET_COPY_OUT_SYSTEM)/etc/Tfa9895.cnt
 
 # Audio
+# SM-T35x variants use a proprietary NXP tfa9895 amplifier that only works with audio 2.0.
+PRODUCT_PACKAGES += \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio.effect@2.0-impl
+
+# Audio
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
 	$(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
