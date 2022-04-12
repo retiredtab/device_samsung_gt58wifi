@@ -94,6 +94,11 @@ PRODUCT_COPY_FILES += \
 	frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
 
 # Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0-impl \
+    android.hardware.bluetooth@1.0-service
+
+# Bluetooth
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/bluetooth/iop_bt.db:$(TARGET_COPY_OUT_SYSTEM)/etc/bluetooth/iop_bt.db \
     $(LOCAL_PATH)/configs/bluetooth/iop_device_list.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/bluetooth/iop_device_list.conf
