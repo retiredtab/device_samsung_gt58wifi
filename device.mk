@@ -44,8 +44,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # copy over GPS proprietary files
 PRODUCT_COPY_FILES += \
-	vendor/samsung/msm8916-common/proprietary/lib/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_api_v02.so \
-	vendor/samsung/msm8916-common/proprietary/lib/libloc_ds_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_ds_api.so
+	vendor/samsung/msm8916-common/proprietary/vendor/lib/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_api_v02.so \
+	vendor/samsung/msm8916-common/proprietary/vendor/lib/libloc_ds_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_ds_api.so
 	
 # TimeKeep - Qualcomm RTC is readonly.  Use this to keep time after a reboot and for TWRP.
 PRODUCT_PACKAGES += \
