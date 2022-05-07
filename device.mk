@@ -121,6 +121,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     FlipFlap
 
+# Media (camera) configuration files
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/configs/media/t350-media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml
+
+PRODUCT_PROPERTY_OVERRIDES += \
+	media.settings.xml=/vendor/etc/media_profiles.xml
+
 # Permissions
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.camera.autofocus.xml:system/etc/permissions/android.hardware.camera.autofocus.xml \
