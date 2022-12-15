@@ -62,6 +62,7 @@ PRODUCT_COPY_FILES += \
 # Audio
 # SM-T35x variants use a proprietary NXP tfa9895 amplifier that only works with audio 2.0.
 PRODUCT_PACKAGES += \
+    android.hardware.audio.service \
     android.hardware.audio@2.0-impl \
     android.hardware.audio.effect@2.0-impl
 
